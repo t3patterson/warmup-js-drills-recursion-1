@@ -28,7 +28,7 @@ var encodedURL3 = encodeURL("i'm all about the $")
 console.assert(encodedURL3 === "i%27m%20all%20about%20the%20%24")
 
 var encodedURL4 = encodeURL("20% of $100")
-console.assert(encodedURL3 === "20%25of%24100")
+console.assert(encodedURL3 === "20%25%20of%20%24100")
 
 
 
