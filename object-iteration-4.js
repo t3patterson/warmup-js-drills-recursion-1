@@ -3,10 +3,11 @@
 //   Characters for punctuation in URLs 
 //   must be encoded in ASCII hexadecimal character codes
 //
-//   For example: the string : 'you are cool!'
-//   would be encoded in a URL : 'you%20are%20cool%21'
+//   For example, the string 'you are cool!'
+//   would be encoded in a URL as: 'you%20are%20cool%21'
 //
-//   Take a normal string and build a URL encoder for it
+//   The task is to buid an encoder for normal strings 
+//   to valid url-encoded strings
 //
 //   Here is an encoding chart
 //   %20 - space
