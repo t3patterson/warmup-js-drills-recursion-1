@@ -1,21 +1,20 @@
 //-----------------------------------------
 // TASK: encodeURL()
-//   URLs can only be sent using an ASCII character set
-//   When formatting a URL, certain characters like spaces, quote marks
-//   and parentheses must be replaced with a '%' and two letters/numbers
+//   Characters for punctuation in URLs 
+//   must be encoded in ASCII hexadecimal character codes
 //
-//   For example: the string : 'how are you'
-//   would be URL encoded to : 'how%20are%20you'
+//   For example: the string : 'you are cool!'
+//   would be encoded in a URL : 'you%20are%20cool%21'
 //
-//   Take a string and build a URL encoder for it
-
+//   Take a normal string and build a URL encoder for it
 //
+//   Here is an encoding chart
 //   %20 - space
 //   %21 - !
 //   %22 - "
 //   %24 - $
+//   %25 - %
 //   %27 - '
-//
 //------------------------------------------
 
 var encodedURL1 = encodeURL('this is great')
@@ -26,6 +25,10 @@ console.assert(encodedURL2 === 'she%20said%20%22there%20is%20no%20need%20for%20v
 //
 var encodedURL3 = encodeURL("i'm all about the $")
 console.assert(encodedURL3 === "i%27m%20all%20about%20the%20%24")
+
+var encodedURL4 = encodeURL("20% of $100")
+console.assert(encodedURL3 === "20%25of%24100")
+
 
 
 
